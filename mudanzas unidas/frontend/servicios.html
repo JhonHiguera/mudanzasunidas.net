@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudanzas Unidas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#01066b',
+                        'primary-orange': '#f47c00',
+                        'primary-white': '#ffffff',
+                        'celest-blue': '#47c5fb'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-celest-blue to-primary-blue">
+    <header class="bg-primary-blue text-primary-white">
+        <nav class="container mx-auto flex justify-between items-center p-2">
+            <!-- Updated image path -->
+            <img src="./assets_image/space_y_tecnologiaya-removebg-preview.png" alt="Logo Mudanzas Unidas" class="h-22 w-40">
+            <div class="text-2xl font-bold">Mudanzas Unidas</div>
+            <div class="flex items-center space-x-6">
+                <a href="#inicio" class="hover:text-primary-orange">Inicio</a>
+                <a href="#nosotros" class="hover:text-primary-orange">Nosotros</a>
+                <a href="#servicios" class="hover:text-primary-orange">Servicios</a>
+                <a href="#planes" class="hover:text-primary-orange">Planes</a>
+                <a href="#contactos" class="hover:text-primary-orange">Contactos</a>
+                <div class="relative">
+                    <input type="text" placeholder="Buscar..." 
+                        class="bg-primary-white text-primary-blue px-3 py-1 rounded-full">
+                    <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-primary-blue"></i>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="w-full h-full pl-6">
+            <img src="./assets_image/WhatsApp Image 2024-12-23 at 20.50.15 (2).jpeg" 
+            alt="Imagen Informativa 2" 
+            class="rounded-lg shadow-lg w-full h-full">                        
+        </div>
+        <!-- Carrusel de Imágenes -->
+        <section class="relative h-[300px] w-full overflow-hidden">           
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" 
+                style="background-image: url('/api/placeholder/1920/1080');">
+            </div>
+        </section>
+       
+        <!-- Segundo Piso: Imagen a la Derecha -->            
+        <div class="flex items-center mb-10 flex-row-reverse">
+                <div class="w-1/2 text-center">
+                <h2 class="text-3xl font-bold mb-4 text-primary-blue">SERVICIOS BASICOS</h2>
+                <p class="text-center mb-4 text-primary-white">
+                   . Transporte de muebles
+                   . Embalaje básico
+                   . Carga y Descarga
+                   . Seguro de mudanza
+                </p>
+                <h2 class="text-3xl font-bold mb-4 text-primary-blue">SERVICIOS ESPECIALES</h2>
+                <p class="text-center mb-4 text-primary-white">
+                   . Embalaje premium
+                   . Seguro de mudanza
+                   . Desmontaje y montaje profesional
+                   . Almacenamiento temporal
+                   . Instalacion de domotica
+                </p>
+            </div>
+            <div class="w-1/2">
+                <div class="w-full pl-6">
+                    <img src="./assets_image/WhatsApp Image 2024-12-23 at 20.50.16 (1).jpeg" 
+                    alt="Imagen Informativa 2" 
+                    class="rounded-lg shadow-lg w-full h-full">                        
+                </div>
+                <h2 class="text-2xl font-bold mb-4 text-primary-blue">3 TIPS ANTES DE TU MUDANZA</h2>
+                <p class="text-lg mb-6 text-primary-white">
+                    Nuestra prioridad con nuestros clientes es brindarles los mejores servicio de manera personalizada,
+                    con el fin de darles mayor comodidad y confort para que cambies tu vida y la de tu familia.
+                    . Transferencias seguras
+                        Utilizamos servidores con servicios de seguridad de alto nivel
+                    . Privacidad
+                        Tus datos siempre estarán seguros gracias a la
+                        encriptación de todas las transferencias
+                    . Estándares
+                        Utilizamos tecnologías basadas en estándares que se
+                        actualizan continuamente añadiendo mejoras de
+                        seguridad
+                </p>
+                <a href="#servicios" class="inline-block bg-primary-orange text-primary-white 
+                    px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+                    Ver Detalles
+                </a>
+            </div>
+        </div>
+    </main>
+</section>
+<footer class="bg-primary-blue text-primary-white py-8">
+    <div class="container mx-full text-center">
+        <p>Copyrigth-Space3D-2024 Todos los Derechos Reservados</p>
+        <div class="mt-1 space-x-1">
+            <a href="#" class="hover:text-primary-orange">Política de Privacidad</a>
+            <a href="#" class="hover:text-primary-orange">Términos de Servicio</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

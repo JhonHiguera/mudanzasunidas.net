@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudanzas Unidas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#01066b',
+                        'primary-orange': '#f47c00',
+                        'primary-white': '#ffffff',
+                        'celest-blue': '#47c5fb'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-celest-blue to-primary-blue">
+    <header class="bg-primary-blue text-primary-white">
+        <nav class="container mx-auto flex justify-between items-center p-2">
+            <!-- Updated image path -->
+            <img src="./assets_image/space_y_tecnologiaya-removebg-preview.png" alt="Logo Mudanzas Unidas" class="h-22 w-40">
+            <div class="text-2xl font-bold">Mudanzas Unidas</div>
+            <div class="flex items-center space-x-6">
+                <a href="#inicio" class="hover:text-primary-orange">Inicio</a>
+                <a href="#nosotros" class="hover:text-primary-orange">Nosotros</a>
+                <a href="#servicios" class="hover:text-primary-orange">Servicios</a>
+                <a href="#planes" class="hover:text-primary-orange">Planes</a>
+                <a href="#contactos" class="hover:text-primary-orange">Contactos</a>
+                <div class="relative">
+                    <input type="text" placeholder="Buscar..." 
+                        class="bg-primary-white text-primary-blue px-3 py-1 rounded-full">
+                    <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-primary-blue"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel de Imágenes -->
+        <section class="relative h-[600px] w-full overflow-hidden">
+            <img src="./assets_image/mudanzas page.png" class="header-image" alt="">
+            <div class="absolute inset-0 bg-black opacity-0"></div>
+            <!-- Imagen de fondo del carrusel con placeholder -->
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" 
+                style="background-image: url('/api/placeholder/1920/1080');">
+            </div>
+        </section>
+        <!-- Segundo Piso: Imagen a la Derecha -->            
+        <div class="flex items-center mb-16 flex-row-reverse">
+            <div class="w-1/2 pl-6">
+                <img src="./assets_image/2 (2).png" 
+                        alt="Imagen Informativa 2" 
+                        class="rounded-lg shadow-lg w-full h-auto">                        
+            </div>
+            <div class="w-1/2 text-right">
+                <h2 class="text-3xl font-bold mb-4 text-primary-blue">MISIÓN</h2>
+                <p class="text-center mb-4 text-primary-white">
+                    Misión en Mudanzas Unidas es ofrecer un servicio de mudanzas confiable, eficiente y
+                    accesible, garantizando que cada miembro de tu
+                    familia.
+                </p>
+                <h2 class="text-3xl font-bold mb-4 text-primary-blue">VISIÓN</h2>
+                <p class="text-center mb-4 text-primary-white">
+                    Visión: Ser la empresa líder en servicios de mudanzas, reconocida por su confianza, eficiencia y trato familiar,
+                    haciendo de cada traslado una experiencia segura y sin preocupaciones para nuestros clientes.
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center mb-16 flex-row-reverse">
+            <div class="w-1/2 pl-6">
+                <img src="./assets_image/2 (2).png" 
+                        alt="Imagen Informativa 2" 
+                        class="rounded-lg shadow-lg w-full h-auto">                        
+            </div>
+            <div class="w-1/2 text-right">
+                <h2 class="text-3xl font-bold mb-4 text-primary-blue">NUESTROS VALORES</h2>
+                <p class="text-center mb-4 text-primary-white">
+                    Nuestra empresa de mudanzas se fundamenta en valores esenciales que guían cada servicio que ofrecemos. La responsabilidad y el cuidado son pilares fundamentales en el manejo de las pertenencias de nuestros clientes, 
+                    asegurando que cada objeto sea tratado con el máximo respeto. La puntualidad marca nuestro compromiso con los tiempos acordados, mientras que la transparencia se refleja en presupuestos claros y comunicación directa. 
+                    Nos distinguimos por nuestra profesionalidad, contando con un equipo altamente capacitado que trabaja con dedicación y eficiencia. La confianza que nuestros clientes depositan en nosotros es nuestro mayor activo,
+                    y nos esforzamos día a día por mantenerla a través de un servicio impecable.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary-blue text-primary-white py-8">
+        <div class="container mx-full text-center">
+            <p>Copyrigth-Space3D-2024 Todos los Derechos Reservados</p>
+            <div class="mt-1 space-x-1">
+                <a href="#" class="hover:text-primary-orange">Política de Privacidad</a>
+                <a href="#" class="hover:text-primary-orange">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

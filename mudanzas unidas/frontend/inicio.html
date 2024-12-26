@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudanzas Unidas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#01066b',
+                        'primary-orange': '#f47c00',
+                        'primary-white': '#ffffff',
+                        'celest-blue': '#47c5fb'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-celest-blue to-primary-blue">
+    <header class="bg-primary-blue text-primary-white">
+        <nav class="container mx-auto flex justify-between items-center p-2">
+            <!-- Updated image path -->
+            <img src="./assets_image/space_y_tecnologiaya-removebg-preview.png" alt="Logo Mudanzas Unidas" class="h-22 w-40">
+            <div class="text-2xl font-bold">Mudanzas Unidas</div>
+            <div class="flex items-center space-x-6">
+                <a href="#inicio" class="hover:text-primary-orange">Inicio</a>
+                <a href="#nosotros" class="hover:text-primary-orange">Nosotros</a>
+                <a href="#servicios" class="hover:text-primary-orange">Servicios</a>
+                <a href="#planes" class="hover:text-primary-orange">Planes</a>
+                <a href="#contactos" class="hover:text-primary-orange">Contactos</a>
+                <div class="relative">
+                    <input type="text" placeholder="Buscar..." 
+                        class="bg-primary-white text-primary-blue px-3 py-1 rounded-full">
+                    <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-primary-blue"></i>
+                </div>
+                
+            </div>
+        </nav>
+    </header>

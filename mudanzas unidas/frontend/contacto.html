@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudanzas Unidas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#01066b',
+                        'primary-orange': '#f47c00',
+                        'primary-white': '#ffffff',
+                        'celest-blue': '#47c5fb'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-b from-celest-blue to-primary-blue">
+    <header class="bg-primary-blue text-primary-white">
+        <nav class="container mx-auto flex justify-between items-center p-2">
+            <!-- Updated image path -->
+            <img src="./assets_image/space_y_tecnologiaya-removebg-preview.png" alt="Logo Mudanzas Unidas" class="h-22 w-40">
+            <div class="text-2xl font-bold">Mudanzas Unidas</div>
+            <div class="flex items-center space-x-6">
+                <a href="#inicio" class="hover:text-primary-orange">Inicio</a>
+                <a href="#nosotros" class="hover:text-primary-orange">Nosotros</a>
+                <a href="#servicios" class="hover:text-primary-orange">Servicios</a>
+                <a href="#planes" class="hover:text-primary-orange">Planes</a>
+                <a href="#contactos" class="hover:text-primary-orange">Contactos</a>
+                <div class="relative">
+                    <input type="text" placeholder="Buscar..." 
+                        class="bg-primary-white text-primary-blue px-3 py-1 rounded-full">
+                    <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-primary-blue"></i>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel de Imágenes -->
+        <section class="relative h-[600px] w-full overflow-hidden">
+            <img src="./assets_image/5.png" class="header-image" alt="">
+            <div class="absolute inset-0 bg-black opacity-0"></div>
+            <!-- Imagen de fondo del carrusel con placeholder -->
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" 
+                style="background-image: url('/api/placeholder/1920/1080');">
+            </div>
+        </section>
+        <!-- 5 Pisos Informativos -->
+        <section class="container mx-auto py-16">
+            <!-- Primer Piso: Imagen a la Izquierda -->             
+            <div class="flex items-center mb-16">
+                <div class="w-full pr-10">
+                    <img src="./assets_image/4.png"
+                         alt="Imagen Informativa 1" 
+                         class="rounded-lg shadow-lg w-full h-full">
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto" class="container mx-auto py-16">
+        <div class="flex justify-between items-start gap-8">
+            <!-- Columna 1: Formulario -->
+            <div class="w-1/3 bg-primary-white rounded-2xl shadow-lg p-10">
+                <h2 class="text-4xl font-bold mb-8 text-center text-primary-blue">Contáctanos</h2>
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="nombre" class="block text-primary-blue mb-2">Nombre</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            required 
+                            class="w-full px-4 py-2 border-2 border-celest-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-orange"
+                        >
+                    </div>
+                                    
+                    <div class="mb-4">
+                        <label for="apellido" class="block text-primary-blue mb-2">Apellido</label>
+                        <input 
+                            type="text" 
+                            id="apellido" 
+                            name="apellido" 
+                            required 
+                            class="w-full px-4 py-2 border-2 border-celest-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-orange"
+                        >
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="correo" class="block text-primary-blue mb-2">Correo Electrónico</label>
+                        <input 
+                            type="email" 
+                            id="correo" 
+                            name="correo" 
+                            required 
+                            class="w-full px-4 py-2 border-2 border-celest-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-orange"
+                        >
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="telefono" class="block text-primary-blue mb-2">Teléfono</label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono" 
+                            required 
+                            class="w-full px-4 py-2 border-2 border-celest-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-orange"
+                        >
+                    </div>
+                    
+                    <button 
+                        type="submit" 
+                        class="w-full bg-primary-orange text-primary-white py-3 rounded-lg hover:bg-opacity-90 transition duration-300 ease-in-out transform hover:scale-105"
+                    >
+                        Agendar
+                    </button>
+                </form>
+            </div>
+
+            <!-- Columna 2: Información de Contacto -->
+            <div class="w-1/3 bg-primary-white/10 rounded-2xl p-8">
+                <h2 class="text-3xl font-bold mb-6 text-celest-blue">Información de Contacto</h2>
+                <div class="space-y-4">
+                    <p class="text-lg text-primary-white flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        Dirección: Calle 66c # 122a - 51
+                    </p>
+                    <p class="text-lg text-primary-white flex items-center">
+                        <i class="fas fa-envelope mr-3"></i>
+                        Correo: mudanzasunidascargosas@gmail.com
+                    </p>
+                    <p class="text-lg text-primary-white flex items-center">
+                        <i class="fas fa-city mr-3"></i>
+                        Bogota - Colombia
+                    </p>
+                    <p class="text-lg text-primary-white flex items-center">
+                        <i class="fas fa-phone mr-3"></i>
+                        Teléfono: 3134363145
+                    </p>
+                </div>
+            </div>
+
+            <!-- Columna 3: Mapa y Mensaje -->
+            <div class="w-1/3 space-y-6">
+                <div class="w-full h-[350px] rounded-2xl overflow-hidden">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d806.392523407885!2d-74.13963!3d4.7170392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f834f133ed1bf%3A0xa0b62aff52785657!2sCl.%2066c%20%23122a-52%2C%20Bogot%C3%A1!5e1!3m2!1ses-419!2sco!4v1734737600700!5m2!1ses-419!2sco"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="text-center">
+                    <p class="text-lg mb-4 text-primary-white">
+                        Aquí puedes encontrar la ubicación de nuestras oficinas y 
+                        tener una atención personalizada por nuestros asesores 
+                        con calidad y confiabilidad.
+                    </p>
+                    <b class="text-lg inline-block text-primary-white bg-primary-orange px-6 py-2 rounded-full">
+                        ¡VEN, TE ESPERAMOS!
+                    </b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary-blue text-primary-white py-8">
+        <div class="container mx-full text-center">
+            <p>Copyrigth-Space3D-2024 Todos los Derechos Reservados</p>
+            <div class="mt-1 space-x-1">
+                <a href="#" class="hover:text-primary-orange">Política de Privacidad</a>
+                <a href="#" class="hover:text-primary-orange">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
